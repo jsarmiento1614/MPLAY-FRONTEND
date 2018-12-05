@@ -1,0 +1,32 @@
+mdb-navbar{
+    background: #000;
+    position: absolute;
+    z-index: 9999999;
+    width: 100%;
+}
+a{
+    color: white;
+}
+
+#logoPrimario{
+    height: 45px;
+}
+
+
+form{
+    input.mp-input{
+        background-color: rgba(255, 255, 255, 0.308);
+        border-color: rgba(255, 255, 255, 0.308);
+        color: rgba(255, 255, 255, 0.644)
+    }
+    input.mp-input:hover{
+        color: white
+    }
+    .icon-search{
+        position: absolute;
+        left: 970px;
+        color: white
+    }
+}
+
+
