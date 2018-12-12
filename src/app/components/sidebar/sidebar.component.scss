@@ -6,6 +6,7 @@ $break-large: 992px;
 $break-extra-large: 1200px;
 
 div.mp-main {
+  z-index: 2;
   position: fixed;
   overflow: hidden;
   width: 100%;
@@ -23,6 +24,12 @@ div.mp-main {
 
     a {
       color: white;
+      i.selectIcon:hover{
+        background-color: rgba(228, 37, 129, 0.664);
+        padding: 20% !important;
+        border-radius: 1px;
+      }
+  
     }
 
     ul {
@@ -77,10 +84,11 @@ div.mp-main {
 }
 
 #sidebar {
+  z-index: 2;
   position: fixed;
   overflow: hidden;
   width: 100%;
-  background: rgba(0, 0, 0, 0.575);
+  background: rgba(0, 0, 0, 0.685);
   height: 100%;
   top: 0;
   left: -100%;

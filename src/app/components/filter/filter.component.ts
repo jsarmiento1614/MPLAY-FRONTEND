@@ -22,7 +22,7 @@ export class FilterComponent implements OnInit {
       }); 
 
       $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) $('div.mp-filter').addClass("fixed").fadeIn();
+        if ($(this).scrollTop() > 730) $('div.mp-filter').addClass("fixed").fadeIn();
         else $('div.mp-filter').removeClass("fixed");
       });
     });

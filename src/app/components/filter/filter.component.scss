@@ -6,7 +6,7 @@ $break-large: 992px;
 $break-extra-large: 1200px;
 
 div.mp-filter{
-    
+      z-index: 2;
       div{
         @media screen and (max-width: $break-extra-small) {
            display: block !important;
@@ -96,5 +96,7 @@ div.mp-filter{
     background-color: #FFEF10;
 }
 .fixed{
-position:fixed;
+  position:fixed;
+  top: 1%;
+  z-index: 1 !important;
 }
