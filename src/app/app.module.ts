@@ -5,11 +5,19 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { LoginComponent } from './components/login/login.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    FilterComponent,
+    LoginComponent,
+    CarouselComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

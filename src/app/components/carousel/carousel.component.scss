@@ -1,0 +1,71 @@
+/* Css mplay */
+.mp-style-bars{
+    /* background-color: #878787 !important; */
+    width: 10px !important;
+    padding: .3%;
+    border-radius: 2px;
+ }
+
+ .mp-btn-danger{
+     background-color: #F41F7B;
+     color: white;
+ }
+
+.mp-carousel{
+    /* position: fixed !important;
+    overflow: hidden !important; */
+    height: 100% !important;
+}
+
+.carousel-caption{
+    z-index: 10 !important;
+    left: 2% !important;
+}
+.carousel-indicators{
+    bottom: 6.5% !important;
+}
+
+.carousel-indicators .active{
+    background-color: rgb(249, 253, 0) !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 25% !important;
+    bottom: 25% !important;
+}
+
+/* Media Queries para MPLAY */
+/* break-extra-small:320px;
+break-small = 576px;
+break-medium: 768px;
+break-large: 992px;
+break-extra-large: 1200px; */
+@media screen and (min-width: 768px){
+    .carousel-indicators{
+        bottom: 11.8% !important;
+        left: 40% !important;
+    }
+   
+    .mp-style-bars{
+        width: 10% !important;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .carousel-indicators{
+        bottom: 9% !important;
+        left: 15% !important;
+    }
+   
+    .mp-style-bars{
+        width:7% !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .carousel-indicators{
+        bottom: 7.3% !important;
+        left: 2% !important;
+    }
+  
+}
