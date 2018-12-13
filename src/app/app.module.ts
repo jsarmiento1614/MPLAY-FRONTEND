@@ -9,6 +9,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { LoginComponent } from './components/login/login.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CarouselMovieComponent } from './components/carousel-movie/carousel-movie.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegisterComponent } from './components/register/register.component';
     FilterComponent,
     LoginComponent,
     CarouselComponent,
-    RegisterComponent
+    RegisterComponent,
+    CarouselMovieComponent
   ],
   imports: [
     BrowserModule,
