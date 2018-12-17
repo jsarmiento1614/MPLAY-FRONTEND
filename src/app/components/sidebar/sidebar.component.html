@@ -6,7 +6,7 @@
         <i class="fa fa-search icon-search " aria-hidden="true"></i>
     </form>
     <div class="links mp-link-hide">
-      <a class="nav-link waves-effect " href="#">
+      <a class="nav-link waves-effect " (click) = "enabledLogin();">
         <i class="fa fa-user-circle mr-2" aria-hidden="true"></i>Iniciar Sesión</a>
 
       <a class="nav-link waves-effect " href="#">
@@ -37,11 +37,19 @@
       <i class="fa fa-search icon-search " aria-hidden="true"></i>
     </form>
     <div class="links">
-      <a class="nav-link waves-effect " href="#">
-        <i class="fa fa-user-circle mr-2" aria-hidden="true"></i>Iniciar Sesion</a>
+      <a class="nav-link waves-effect" (click)="enabledLogin();">
+        <i class="fa fa-user-circle mr-2" aria-hidden="true"></i>Iniciar Sesion
+      </a>
 
       <a class="nav-link waves-effect " href="#">
         <i class="fa fa-facebook mr-2" aria-hidden="true"></i>Iniciar con facebook</a>
     </div>
   </nav>
+</div>
+
+<div *ngIf="activeLogin">
+  <a  (click)="disableLogin();" class="mp-buttonClose">
+      <i class="fa fa-times text-white" title="Cerrar" ></i>
+  </a>
+    <app-login></app-login>
 </div>

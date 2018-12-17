@@ -176,3 +176,15 @@ div.mp-main {
   transition: left 0.5s ease;
 }
 
+.mp-buttonClose{
+  position: fixed;
+  overflow: hidden;
+  width: 5%;
+  left: 62%;
+  top: 7.5%;
+  z-index: 101;
+  &:hover{
+    color: #FFEF10 !important;
+  }
+}
+
