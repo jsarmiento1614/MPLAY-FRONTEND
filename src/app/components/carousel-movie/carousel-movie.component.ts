@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { MovieService } from '../../shared/service/movie.service';
+import { Movie } from '../../shared/model/movie';
 @Component({
   selector: 'app-carousel-movie',
   templateUrl: './carousel-movie.component.html',
   styleUrls: ['./carousel-movie.component.scss']
 })
 export class CarouselMovieComponent implements OnInit {
-
-  constructor() { }
+  movie: Array<Movie>; 
+  createMode : boolean;
+  SelectedMovie: Movie;
+  constructor(private movieService: MovieService) {
+    this.movieService = movieService;
+   }
 
   ngOnInit() {
+    this.movieService.getMovies()
+    .subscribe((data : Array<Movie>) =>{
+      this.movie = data.slice(0,20);
+    },error => {
+      console.log(`Error ${error}`);
+    });
     $(document).ready(function() {
       $("#myCarousel").on("slide.bs.carousel", function(e) {
         var $e = $(e.relatedTarget);
@@ -33,15 +45,25 @@ export class CarouselMovieComponent implements OnInit {
           }
         }
       });
-      if ($('div#idCard').on == true) $('.mp-card-body').removeClass("d-none")
-       $('div#idCard').on('mouseover',function() {
-            $('.mp-card-body').removeClass('d-none');
-       }).fadeIn(); 
-      $('div#idCard').on('mouseout',function() {
-            $('.mp-card-body').addClass('d-none');
-       }); 
+
+      $(document).on("mouseover", "div.jscard", function () {
+          let idCard = $(this).attr('id')
+          $(`div#${idCard}-card-carouzel`).removeClass('d-none');
+      });
+      $(document).on("mouseout", "div.jscard", function () {
+          let idCard = $(this).attr('id')
+          $(`div#${idCard}-card-carouzel`).addClass('d-none');
+      }); 
+      
+      $(document).on("mouseover", "div.new", function () {
+        let idCard = $(this).attr('id')
+        $(`div#${idCard}-card`).removeClass('d-none');
+      });
+      $(document).on("mouseout", "div.new", function () {
+          let idCard = $(this).attr('id')
+          $(`div#${idCard}-card`).addClass('d-none');
+      });
     });
 
   }
-
 }

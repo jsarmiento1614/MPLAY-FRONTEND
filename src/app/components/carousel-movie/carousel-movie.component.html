@@ -1,84 +1,30 @@
 <div class="container-fluid">
-  <h1 class="text-center mb-3">Bootstrap Carousel</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner row w-100 mx-auto">
       <div class="carousel-item col-md-4 active">
-        <div class="card"  id="idCard">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2017/334/5f96e0fc-b2ce-4c01-ae6d-c2ccd9ac519c.jpg" alt="Card image cap">
-          <div class="mp-card-body d-none">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2018/331/e58c7e4c-ad13-42e0-827d-249860236b5e.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="carousel-item col-md-4" *ngFor="let movie of movie">
+        <div class="card jscard" id="{{movie.MoviesID}}">
+          <img class="card-img-top img-fluid" src="{{movie.Thumb}}" alt="Card image">
+          <div class="mp-card-body d-none" id="{{movie.MoviesID}}-card-carouzel">
             <div class="pt-5 mt-5">
-            <h2 class="card-title text-warning text-uppercase">Titulo de la Pelicula</h2>
-            <h3 class="card-title text-warning">Anio de Lanzamiento</h3>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div>
-              <span class="text-warning">Cact Starts</span>
-              <Span>Icon Likes Number</Span>
+              <h2 class="card-title text-warning text-uppercase">{{movie.Name}}</h2>
+              <h3 class="card-title text-warning">{{movie.Release_Date}}</h3>
+              <p class="card-text">{{movie.Sinopsis}}</p>
+              <div>
+                <span class="text-warning">Cact Starts</span>
+                <Span>Icon Likes Number</Span>
+              </div>
+              <div class="pt-5">
+                <button class="btn btn-outline-primary w-100 mb-2">PLAY</button>
+                <button class="btn btn-outline-danger w-100">DETALLES</button>
+              </div>
             </div>
-            <div class="pt-5">
-              <button class="btn btn-outline-primary w-100 mb-2">PLAY</button>
-              <button class="btn btn-outline-danger w-100">DETALLES</button>
-            </div>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2017/334/d5e16fe8-e9ec-4120-92ce-639873c07224.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 2</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2018/305/f1da3ee7-04d1-42a8-943e-52d991cbf927.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 3</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2018/305/fe2de012-45b2-4808-84b0-5ee0e777d31c.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 4</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2018/313/1e6536a3-1038-49fa-8fae-eeb56c663d9e.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 5</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2017/337/4e41728e-4793-400f-82ec-b9f0ffc1cf3f.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 6</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="https://freeform.azureedge.net/showms/2018/350/c1d3de6a-7098-444d-b322-29eb9ecf2db5.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 7</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
@@ -91,5 +37,28 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
+
+  <div class="mt-4">
+    <div class="col-md-3 d-inline-block" *ngFor="let movie of movie">
+      <div class="card w-100 mb-2 new" id="{{movie.MoviesID}}">
+        <img class="card-img-top img-fluid" src="{{movie.Thumb}}" alt="Card image">
+        <div class="w-100 h-100 mp-card-body d-none" id="{{movie.MoviesID}}-card">
+          <div class="mt-1">
+            <h2 class="card-title text-warning text-uppercase">{{movie.Name}}</h2>
+            <h3 class="card-title text-warning">{{movie.Release_Date}}</h3>
+            <p class="card-text">{{movie.Sinopsis}}</p>
+            <div>
+              <span class="text-warning">Cact Starts</span>
+              <Span>Icon Likes Number</Span>
+            </div>
+            <div class="pt-2">
+              <button class="btn btn-outline-primary w-100 mb-2">PLAY</button>
+              <button class="btn btn-outline-danger w-100">DETALLES</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
   </div>
 </div>

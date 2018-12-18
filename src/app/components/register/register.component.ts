@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/shared/service/user.service';
-import { User } from 'src/app/shared/model/user';
 import * as $ from 'jquery';
+import { User } from 'src/app/shared/model/user';
 
 @Component({
   selector: 'app-register',
@@ -36,11 +36,13 @@ export class RegisterComponent implements OnInit {
   onCreateUser() : void{
     this.newUser = new User; 
     this.userService.addUser(this.newUser)
+   
     .subscribe((data:User)=>{
         this.user.push(data);
       }, error => console.log("error "+ error)
       
     ); 
+    debugger;
    
   }
 
