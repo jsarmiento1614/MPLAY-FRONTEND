@@ -10,8 +10,9 @@
         <form>
           <div class="form-group">
             <div>
-              <input type="text" class="form-control mb-3 border border-light bg-transparent" placeholder="Username or Email Adress">
-              <input type="password" class="form-control border-light bg-transparent" placeholder="Password">
+              <input type="text" class="form-control mb-3 border border-light bg-transparent" placeholder="Username or Email Adress" #email="ngModel" [class.is-valid]="email.valid" [class.is-invalid]="!email.valid && email.dirty" name="email"
+              required ngModel>
+              <input type="password" class="form-control border-light bg-transparent" placeholder="Password"   #pass="ngModel" [class.is-valid]="pass.valid" [class.is-invalid]="!pass.valid && pass.dirty" name="pass" required ngModel>
             </div>
          
             <div class="text-center mt-3">

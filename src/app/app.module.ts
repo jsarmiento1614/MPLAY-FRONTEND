@@ -14,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CarouselMovieComponent } from './components/carousel-movie/carousel-movie.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -25,7 +26,8 @@ import { CarouselMovieComponent } from './components/carousel-movie/carousel-mov
     LoginComponent,
     CarouselComponent,
     RegisterComponent,
-    CarouselMovieComponent
+    CarouselMovieComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
