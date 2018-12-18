@@ -2,7 +2,7 @@
   <div class="w-100 mt-5">
       <h5 class="text-left border-bottom   border-primary  pb-2 text-white">REGISTRA TU CUENTA</h5>
       <div>
-        <form class="pt-2" #form=ngForm (ngSubmit)="onCreateUser(this);">
+        <form class="pt-2" #form=ngForm (ngSubmit)="onCreateUser();">
           <div class="form-group">
             <div>
               <input type="text" class="form-control mp-bg-input  mb-3 active" placeholder= "Nombre" name="name"  [class.is-valid]="name.valid" [class.is-invalid]="name.invalid" ngModel required #name="ngModel">
