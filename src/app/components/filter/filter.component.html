@@ -1,39 +1,39 @@
 <div class="mp-filter p-2 mt-5 text-white w-100">
-    <div class="d-flex align-content-center w-100">
-      <div class="m-container-icon mt-2">
-        <i class="fa fa-filter mr-2"></i><span>Filtrar</span>
-      </div>
-      <div class="mr-4 w-25 button pt-2">
-        <button type="button" class="mp-buttons selected" >All</button>
-        <button type="button" class="mp-buttons">Movies</button>
-        <button type="button" class="mp-buttons">Shows</button>
-      </div>
-      <div class="mr-2 w-75" id="section-filter">
-        <select name="yearRelease" class="custom-select bg-dark mp-options ">
-          <option class="selected">Año de Lanzamiento</option>
-          <option value="1960">1960 </option>
-          <option value="1961">1961</option>
-          <option value="1961">1961</option>
-        </select>
-        <select name="Genres" class="custom-select bg-dark  mp-options">
-          <option class="selected">Género</option>
-          <option value="Accion">Accion</option>
-          <option value="Comedia">Comedia</option>
-        </select>
-        <select name="Ranking" class="custom-select bg-dark  mp-options">
-          <option class="selected">Ranking</option>
-          <option value="5">5 Estrellas</option>
-          <option value="4">4 Estrellas</option>
-        </select>
-        <select name="Age" class="btn custom-select bg-dark mp-options">  
-            <option class="selected">Clasificación de Edad</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-        </select>
-      </div>
-      <div class="mp-button-reset d-none pt-1">
-          <button class="btn bg-primary p-1 text-red">Buscar</button>
-          <button class="btn bg-dark p-1 text-red">X Reset</button>
-      </div>
+  <div class="d-flex align-content-center w-100">
+    <div class="m-container-icon mt-2">
+      <i class="fa fa-filter mr-2"></i><span>Filtrar</span>
+    </div>
+    <div class="mr-4 w-25 button pt-2">
+      <button type="button" class="mp-buttons selected" id="all">All</button>
+      <button type="button" class="mp-buttons" id="movies">Movies</button>
+      <button type="button" class="mp-buttons" id="show">Shows</button>
+    </div>
+    <div class="mr-2 w-75" id="section-filter">
+      <select name="yearRelease" class="custom-select bg-dark mp-options ">
+        <option class="selected" id="añoDeLanzamiento">Año de Lanzamiento</option>
+        <option value="1960">1960 </option>
+        <option value="1961">1961</option>
+        <option value="1961">1961</option>
+      </select>
+      <select name="Genres" class="custom-select bg-dark  mp-options">
+        <option class="selected" id="genero">Género</option>
+        <option value="Accion">Accion</option>
+        <option value="Comedia">Comedia</option>
+      </select>
+      <select name="Ranking" class="custom-select bg-dark  mp-options">
+        <option class="selected" id="ranking">Ranking</option>
+        <option value="5">5 Estrellas</option>
+        <option value="4">4 Estrellas</option>
+      </select>
+      <select name="Age" class="btn custom-select bg-dark mp-options">
+        <option class="selected" id="clsEdad">Clasificación de Edad</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+      </select>
+    </div>
+    <div class="mp-button-reset d-none pt-1">
+      <button class="btn bg-primary p-1 text-red" id="buscar">Buscar</button>
+      <button class="btn bg-dark p-1 text-red" id="reset">X Reset</button>
     </div>
   </div>
+</div>
