@@ -13,10 +13,10 @@
 
               <input type="password" class="form-control border-light mp-bg-input mb-3" id="repeatPass" placeholder="Repetir Contraseña"  name="rptPassword" [class.is-valid]="rptPassword.valid"  [class.is-invalid]="rptPassword.invalid" ngModel required #rptPassword="ngModel">
 
-              <input type="date" class="mp-bg-input mb-3  form-control border-light" id="fechaDeNacimiento" title="Fecha de Nacimiento" name="birthDate" [class.is-valid]="birthDate.valid" [class.is-invalid]="birthDate.invalid" ngModel required #birthDate="ngModel">
+              <input type="date" id="date" class="mp-bg-input mb-3  form-control border-light" id="fechaDeNacimiento" title="Fecha de Nacimiento" name="birthDate" [class.is-valid]="birthDate.valid" [class.is-invalid]="birthDate.invalid" ngModel required #birthDate="ngModel">
               <div class="d-flex mt-4">
 
-              <input type="checkbox" class="w-25 mb-3" value="true" name="termsConditions"  [class.is-valid]="termsConditions.valid" [class.is-invalid]="termsConditions.invalid" ngModel required #termsConditions="ngModel">
+              <input type="checkbox" id="checkBox" class="w-25 mb-3" value="true" name="termsConditions"  [class.is-valid]="termsConditions.valid" [class.is-invalid]="termsConditions.invalid" ngModel required #termsConditions="ngModel">
 
               <p class="mp-text-politicas" >Aceptas nuestras<span class="text-primary">Condiciones</span> , <span class="text-primary"> la Politicas de datos</span> y la <span class="text-primary">  Politicas de Cookies.</span></p>
               </div>
@@ -26,7 +26,7 @@
         </div>
           
         <div class="form-group text-left">
-            <button class="btn btn-danger w-100 mb-3" type="submit" [disabled]="!form.valid">REGISTRARME</button>
+            <button class="btn btn-danger w-100 mb-3" id="registrarme" type="submit" [disabled]="!form.valid">REGISTRARME</button>
         </div>
       </form>
       
