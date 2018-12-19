@@ -10,15 +10,15 @@
       <form>
         <div class="form-group">
           <div>
-            <input type="text" class="form-control mb-3 border border-light bg-transparent" placeholder="Username or Email Adress"
+            <input type="text" class="form-control mb-3 border border-light bg-transparent" id="email" placeholder="Username or Email Adress"
               #email="ngModel" [class.is-valid]="email.valid" [class.is-invalid]="!email.valid && email.dirty" name="email"
               required ngModel>
-            <input type="password" class="form-control border-light bg-transparent" placeholder="Password" #pass="ngModel"
+            <input type="password" class="form-control border-light bg-transparent" id="pass" placeholder="Password" #pass="ngModel"
               [class.is-valid]="pass.valid" [class.is-invalid]="!pass.valid && pass.dirty" name="pass" required ngModel>
           </div>
 
           <div class="text-center mt-3">
-            <input type="button" class="btn btn-info w-100 bg-info" value="SING IN">
+            <input type="button" id="singIn" class="btn btn-info w-100 bg-info" value="SING IN">
           </div>
         </div>
         <div class="form-group">
@@ -32,8 +32,8 @@
         </div>
 
         <div class="form-group">
-          <input type="button" class="btn btn-primary w-100 mb-3" value="SING IN WITH FACEBOOK">
-          <input type="button" class="btn w-100 mb-3 border border-light bg-transparent" value="Create an Account">
+          <input type="button" class="btn btn-primary w-100 mb-3" id="singInFacebook" value="SING IN WITH FACEBOOK">
+          <input type="button" class="btn w-100 mb-3 border border-light bg-transparent" id="signCreateAccount" value="Create an Account">
         </div>
       </form>
     </div>

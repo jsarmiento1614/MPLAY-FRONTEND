@@ -5,15 +5,15 @@
         <form class="pt-2" #form=ngForm (ngSubmit)="onCreateUser();">
           <div class="form-group">
             <div>
-              <input type="text" class="form-control mp-bg-input  mb-3 active" placeholder= "Nombre" name="name"  [class.is-valid]="name.valid" [class.is-invalid]="name.invalid" ngModel required #name="ngModel">
+              <input type="text" class="form-control mp-bg-input  mb-3 active" id="Nombre" placeholder= "Nombre" name="name"  [class.is-valid]="name.valid" [class.is-invalid]="name.invalid" ngModel required #name="ngModel">
               
-              <input type="email" class="form-control border-light mp-bg-input mb-3" placeholder="Correo Electrónico" name="email" [class.is-valid]="email.valid" [class.is-invalid]="email.invalid" ngModel required #email="ngModel">
+              <input type="email" class="form-control border-light mp-bg-input mb-3" id="correoElectronico" placeholder="Correo Electrónico" name="email" [class.is-valid]="email.valid" [class.is-invalid]="email.invalid" ngModel required #email="ngModel">
 
-              <input type="password" class="form-control border-light mp-bg-input mb-3" placeholder="Contraseña" name="password"  [class.is-valid]="password.valid" [class.is-invalid]="password.invalid" ngModel required #password="ngModel">
+              <input type="password" class="form-control border-light mp-bg-input mb-3" id="pass" placeholder="Contraseña" name="password"  [class.is-valid]="password.valid" [class.is-invalid]="password.invalid" ngModel required #password="ngModel">
 
-              <input type="password" class="form-control border-light mp-bg-input mb-3" placeholder="Repetir Contraseña"  name="rptPassword" [class.is-valid]="rptPassword.valid"  [class.is-invalid]="rptPassword.invalid" ngModel required #rptPassword="ngModel">
+              <input type="password" class="form-control border-light mp-bg-input mb-3" id="repeatPass" placeholder="Repetir Contraseña"  name="rptPassword" [class.is-valid]="rptPassword.valid"  [class.is-invalid]="rptPassword.invalid" ngModel required #rptPassword="ngModel">
 
-              <input type="date" class="mp-bg-input mb-3  form-control border-light" title="Fecha de Nacimiento" name="birthDate" [class.is-valid]="birthDate.valid" [class.is-invalid]="birthDate.invalid" ngModel required #birthDate="ngModel">
+              <input type="date" class="mp-bg-input mb-3  form-control border-light" id="fechaDeNacimiento" title="Fecha de Nacimiento" name="birthDate" [class.is-valid]="birthDate.valid" [class.is-invalid]="birthDate.invalid" ngModel required #birthDate="ngModel">
               <div class="d-flex mt-4">
 
               <input type="checkbox" class="w-25 mb-3" value="true" name="termsConditions"  [class.is-valid]="termsConditions.valid" [class.is-invalid]="termsConditions.invalid" ngModel required #termsConditions="ngModel">
